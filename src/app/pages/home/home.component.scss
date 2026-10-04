@@ -1,0 +1,50 @@
+﻿:host { display:block; color:#24231f; }
+.hero { min-height:600px; height:min(720px,calc(100svh - 108px)); max-height:790px; position:relative; overflow:hidden; display:grid; grid-template-columns:1fr 1.03fr; background:#171714; color:#f3f0e9; }
+.hero-text { align-self:center; padding:50px 6vw 56px 11vw; position:relative; z-index:1; animation:rise .8s both; }
+.eyebrow { color:#b89a5b; font-size:9px; letter-spacing:.19em; font-weight:600; }
+.hero-logo { width:70px;height:70px;margin:24px 0 14px; }
+.hero-logo img { width:100%;height:100%;object-fit:contain; }
+.hero-kicker { margin:0 0 8px;color:#c4b899;font:italic 17px 'Segoe UI',sans-serif; }
+h1 { margin:0;color:#f4f1e9;font:500 clamp(42px,5.2vw,76px)/.96 'Segoe UI',sans-serif;letter-spacing:-.035em; }
+h1 em, h2 em { color:#c2a465;font-weight:400; }
+.hero-description { max-width:380px;margin:18px 0 25px;color:#b7b5ac;font-size:12px;line-height:1.9; }
+.hero-actions,.visit-actions { display:flex;gap:12px;flex-wrap:wrap; }
+.button { min-height:44px;padding:0 17px;display:inline-flex;align-items:center;justify-content:center;gap:20px;text-decoration:none;font:500 10px 'Segoe UI',sans-serif;transition:transform .2s,background .2s; }
+.button:hover { transform:translateY(-2px); }
+.button-gold { background:#b99b5f;color:#181711;border:1px solid #b99b5f; }
+.button-gold:hover { background:#d0b676; }
+.button-outline { border:1px solid #77756d;color:#eee9dc; }
+.button-outline:hover { border-color:#c7aa6d; }
+.hero-note { margin-top:44px;display:flex;align-items:center;gap:10px;color:#8e8a80;font-size:8px;letter-spacing:.16em; }
+.note-line { width:28px;height:1px;background:#ad9257; }
+.hero-art { position:relative;min-height:100%;background:#c5c0b4;overflow:hidden; }
+.hero-art:after { content:'';position:absolute;inset:0;background:linear-gradient(90deg,#17171425,transparent 35%),linear-gradient(0deg,#11110f55,transparent 28%);pointer-events:none; }
+.hero-art img { width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:52% center;animation:softZoom 1.4s both; }
+.art-label { position:absolute;z-index:1;bottom:24px;left:28px;right:28px;display:flex;justify-content:space-between;color:#fff;font-size:8px;letter-spacing:.17em; }.art-label b { font-weight:400;color:#e1d4b4; }
+.hero-index { position:absolute;bottom:22px;left:5.3%;color:#b7b0a0;font-size:9px;letter-spacing:.14em; }.hero-index span { color:#ac9056;padding:0 5px; }
+.section-pad { padding:94px max(7%,calc((100% - 1280px)/2)); }
+.section-head { display:flex;justify-content:space-between;align-items:end;margin-bottom:32px;gap:20px; }
+.section-head h2,.story-copy h2,.manifesto h2,.visit h2 { margin:10px 0 0;font:500 clamp(34px,4.2vw,54px)/1.06 'Segoe UI',sans-serif;letter-spacing:-.025em; }
+.section-head h2 em,.story-copy h2 em { color:#9e8149; }
+.text-link { color:#39372f;text-decoration:none;font-size:10px;border-bottom:1px solid #b7a16f;padding-bottom:6px;white-space:nowrap; }.text-link span { color:#9e8149;margin-left:8px; }
+.collection-grid { display:grid;grid-template-columns:repeat(3,1fr);gap:26px 16px; }
+.collection-card { color:#24231f;text-decoration:none; }
+.collection-image { height:clamp(190px,25vw,315px);overflow:hidden;background:#ded9ce;position:relative; }
+.collection-image img { width:100%;height:100%;object-fit:cover;transition:transform .55s; }.collection-card:hover img{transform:scale(1.045)}
+.collection-number { position:absolute;left:13px;top:13px;color:#625a48;font-size:9px;letter-spacing:.12em; }
+.collection-label { display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #d7d2c7;padding:12px 0; }.collection-label h3 { margin:0;font:500 19px 'Segoe UI',sans-serif; }.collection-label span { color:#9d814a; }
+.new-arrivals { background:#efede7; }
+.product-grid { display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px; }
+.manifesto { background:#1b1b18;color:#efede5;padding:88px max(8%,calc((100% - 1200px)/2));display:grid;grid-template-columns:.8fr 1.1fr 1.5fr;gap:44px;align-items:center; }
+.manifesto-mark { width:164px;height:164px;border:1px solid #756342;color:#bd9f62;border-radius:50%;display:grid;place-items:center;font:italic 112px 'Segoe UI',sans-serif;box-shadow:inset 0 0 0 7px #1b1b18,inset 0 0 0 8px #ffffff15; }
+.manifesto h2 { font-size:42px; }.manifesto p { max-width:300px;color:#aaa79e;font-size:11px;line-height:1.8; }
+.values { display:grid;grid-template-columns:1fr 1fr;gap:28px 24px; }.values>div { border-top:1px solid #ffffff2b;padding-top:12px; }.values span{color:#b99a5e;font-size:9px;letter-spacing:.15em}.values h3{margin:9px 0 4px;font:500 18px 'Segoe UI',sans-serif}.values p{margin:0;font-size:10px}
+.story { display:grid;grid-template-columns:1fr 1fr;gap:9%;align-items:center; }
+.story-image { min-height:390px;background:#e3ded3;display:grid;place-items:center;position:relative;overflow:hidden; }.story-image:before,.story-image:after{content:'';position:absolute;border:1px solid #c0b7a5;border-radius:50%;width:290px;height:290px}.story-image:after{width:350px;height:350px}.story-image img{width:185px;height:185px;object-fit:contain;z-index:1;box-shadow:0 18px 48px #0003;border-radius:50%}.story-image>span{position:absolute;bottom:20px;left:22px;color:#6b6455;font-size:8px;letter-spacing:.15em}
+.story-copy h2 { font-size:46px;margin-bottom:20px; }.story-copy>p{color:#77746c;font-size:12px;line-height:1.95;max-width:480px}.story-copy>.gujarati-copy{font-family:'Noto Sans Gujarati','Nirmala UI','Shruti','Segoe UI',sans-serif;font-size:clamp(15px,1.35vw,18px);line-height:2.05;color:#514d43;letter-spacing:0}.story-copy .owners{margin:18px 0 25px;color:#46443e}.owners strong{color:#292822;font-weight:600}
+.visit { background:#b89b61;padding:66px max(8%,calc((100% - 1200px)/2));display:flex;align-items:center;justify-content:space-between;gap:28px;color:#171611; }.visit .eyebrow{color:#4f422c}.visit h2{font-size:52px}.visit h2 em{color:#f6f0e4}.visit p{margin:16px 0 7px;font:19px 'Segoe UI',sans-serif}.visit address{font-style:normal;color:#484333;font-size:11px;line-height:1.8}.visit .button-gold{border-color:#171611;background:#171611;color:#f0e6ce}.visit .button-outline{border-color:#584a30;color:#1b1a14}.visit-side{display:flex;align-items:center;gap:16px;color:#54482f;font-size:8px;line-height:1.8;letter-spacing:.13em}.visit-big{font:italic 138px/.8 'Segoe UI',sans-serif;color:#d2b97d}
+@keyframes rise { from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)} } @keyframes softZoom { from{transform:scale(1.035);opacity:.75}to{transform:scale(1);opacity:1} }
+@media(max-width:980px){.hero{min-height:560px}.hero-text{padding-left:7vw;padding-right:3vw}.hero-index{left:3%}.section-pad{padding:72px 5%}.product-grid{grid-template-columns:repeat(2,1fr);gap:30px 18px}.manifesto{grid-template-columns:.6fr 1fr;gap:28px;padding:70px 6%}.manifesto-mark{width:120px;height:120px;font-size:80px}.values{grid-column:1/-1}.story{gap:5%}.story-image{min-height:320px}}
+@media(max-width:640px){.hero{height:auto;min-height:0;max-height:none;grid-template-columns:1fr}.hero-text{padding:48px 24px 38px}.hero-logo{width:58px;height:58px;margin:18px 0 12px}h1{font-size:clamp(42px,12vw,62px)}.hero-description{font-size:11px}.hero-note{margin-top:28px}.hero-art{height:380px;min-height:0}.hero-index{display:none}.section-pad{padding:58px 20px}.section-head{align-items:flex-end;margin-bottom:23px}.section-head h2{font-size:36px}.text-link{font-size:9px}.collection-grid{grid-template-columns:repeat(2,1fr);gap:22px 12px}.collection-image{height:220px}.collection-label h3{font-size:17px}.manifesto{padding:58px 22px;grid-template-columns:1fr 1.6fr;gap:18px}.manifesto-mark{width:94px;height:94px;font-size:64px}.manifesto h2{font-size:36px}.manifesto>div:nth-child(2) p{font-size:10px}.values{gap:20px 16px}.values h3{font-size:16px}.story{grid-template-columns:1fr;gap:30px}.story-image{min-height:280px}.story-copy h2{font-size:39px}.visit{padding:52px 22px;align-items:flex-start}.visit h2{font-size:44px}.visit-side{display:none}}
+@media(max-width:370px){.section-head{align-items:flex-start;flex-direction:column;gap:13px}.product-grid{gap:25px 10px}.collection-image{height:185px}.manifesto{grid-template-columns:1fr}.manifesto-mark{display:none}.values{margin-top:10px}.visit-actions{gap:8px}.visit .button{padding:0 11px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}

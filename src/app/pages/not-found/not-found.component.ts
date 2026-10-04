@@ -1,0 +1,5 @@
+﻿import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
+
+@Component({ selector: 'app-not-found', standalone: true, imports: [RouterLink], template: `<section class="not-found"><img src="assets/the-friendz-fashion-point-logo.png" alt="The Friendz Fashion Point logo"><span>PAGE NOT FOUND · 404</span><h1>Looks like a<br><em>wrong turn.</em></h1><p>That page isn't here, but there's plenty more to find.</p><a routerLink="/shop">Back to the home page</a></section>`, styles: [`.not-found{min-height:66vh;padding:60px 20px;display:flex;align-items:center;justify-content:center;flex-direction:column;background:#1b1b18;color:#f0ede5;text-align:center}.not-found img{width:82px;height:82px;object-fit:contain;margin-bottom:20px}.not-found>span{color:#bd9f62;font-size:9px;letter-spacing:.17em}.not-found h1{font:500 clamp(42px,6vw,60px)/1.02 'Segoe UI',sans-serif;margin:18px 0}.not-found h1 em{color:#c2a465}.not-found p{color:#aaa69b;font-size:11px}.not-found a{margin-top:14px;color:#e6d4a7;font-size:11px}`] })
+export class NotFoundComponent {}
